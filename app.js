@@ -1263,4 +1263,33 @@ let quizData=[],quizIndex=0,quizScore=0,hintUsed=false;
 async function renderQuiz(){shell('<p>Loading your Pokédex challenge…</p>');try{const response=await fetch('questions.txt');if(!response.ok)throw new Error('Could not load questions.txt');quizData=await response.json();if(!Array.isArray(quizData)||quizData.length<1)throw new Error('Question file is empty');quizData=quizData.map(q=>({...q})).sort(()=>Math.random()-.5);quizIndex=0;quizScore=0;hintUsed=false;drawQuiz()}catch(e){shell(`<p>Could not load <code>questions.txt</code>. Open this site through a static web server (GitHub Pages works), and check that the file contains valid JSON.</p><p>${e.message}</p>`);}}
 function drawQuiz(){if(quizIndex>=quizData.length){shell(`<div style="font-size:40px;color:var(--yellow)">✦</div><h3>Quiz complete!</h3><p>You scored <b>${quizScore} / ${quizData.length}</b>.</p><p>${Math.round(quizScore/quizData.length*100)}% Poké-knowledge unlocked.</p><button id="quizAgain">Try a new run ↻</button>`);$('#quizAgain').onclick=()=>renderQuiz();return}const q=quizData[quizIndex];hintUsed=false;shell(`<div class="quiz-meta">QUESTION ${quizIndex+1} / ${quizData.length} · SCORE ${quizScore}</div><div class="quiz-progress"><span style="width:${quizIndex/quizData.length*100}%"></span></div><p class="quiz-question">${escapeHtml(q.question)}</p><p class="quiz-hint" id="quizHint">Need a clue? Tap hint.</p><div class="quiz-answer"><input id="quizInput" autocomplete="off" placeholder="Type your answer…"><button id="quizSubmit">Submit ↗</button></div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button id="quizHintBtn">Show hint ✦</button><button id="quizSkip">Skip question →</button></div><p class="game-status" id="quizFeedback"></p>`);const submit=()=>{const answer=$('#quizInput').value.trim().toLowerCase().replace(/[^a-z0-9]/g,'');const correct=String(q.answer).toLowerCase().replace(/[^a-z0-9]/g,'');if(!answer){$('#quizFeedback').textContent='Type an answer first.';return}if(answer===correct){quizScore++;$('#quizFeedback').textContent='Correct! Great work.'}else $('#quizFeedback').textContent=`Not quite — answer: ${q.answer}`;$('#quizSubmit').disabled=true;$('#quizInput').disabled=true;$('#quizSkip').textContent='Next question →';$('#quizSkip').onclick=()=>{quizIndex++;drawQuiz()}};$('#quizSubmit').onclick=submit;$('#quizInput').addEventListener('keydown',e=>{if(e.key==='Enter')submit()});$('#quizHintBtn').onclick=()=>{$('#quizHint').textContent='Hint: '+q.hint;hintUsed=true};$('#quizSkip').onclick=()=>{quizIndex++;drawQuiz()};$('#quizInput').focus()}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-$('#feedbackForm').addEventListener('submit',e=>{e.preventDefault();const name=$('#name').value.trim(),email=$('#email').value.trim(),message=$('#message').value.trim();const subject=encodeURIComponent('PokeTalks Fan Arcade feedback');const body=encodeURIComponent(`Trainer: ${name}\nEmail: ${email||'Not provided'}\n\n${message}`);$('#formNote').textContent='Opening your email app with the message prefilled…';window.location.href=`mailto:hello@example.com?subject=${subject}&body=${body}`;});
+
+const feedbackForm = document.getElementById("feedbackForm");
+const formNote = document.getElementById("formNote");
+
+feedbackForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Yahan apna email address daalo
+  const recipient = "contact.poketalks@gmail.com";
+
+  const subject = encodeURIComponent(
+    "PokeTalks Website Feedback"
+  );
+
+  const body = encodeURIComponent(
+    `Trainer Name: ${name}\n` +
+    `Visitor Email: ${email || "Not provided"}\n\n` +
+    `Message:\n${message}`
+  );
+
+  window.location.href =
+    `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+  formNote.textContent =
+    "Your email app is opening. Please send the prepared message to deliver your feedback.";
+});
