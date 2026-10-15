@@ -1,0 +1,1477 @@
+[
+  {
+    "question": "What is the name of Ash Ketchum\u2019s first partner Pok\u00e9mon?",
+    "answer": "Pikachu",
+    "hint": "It is an Electric-type mouse Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves from Charmander?",
+    "answer": "Charmeleon",
+    "hint": "It is the middle stage before Charizard."
+  },
+  {
+    "question": "What type is Squirtle?",
+    "answer": "Water",
+    "hint": "It is one of the original Kanto starters."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Seed Pok\u00e9mon?",
+    "answer": "Bulbasaur",
+    "hint": "It has a plant bulb on its back."
+  },
+  {
+    "question": "What is the final evolution of Bulbasaur?",
+    "answer": "Venusaur",
+    "hint": "It has a large flower on its back."
+  },
+  {
+    "question": "Which Pok\u00e9mon is number 25 in the National Pok\u00e9dex?",
+    "answer": "Pikachu",
+    "hint": "Its Pok\u00e9dex number is iconic."
+  },
+  {
+    "question": "What type is Jigglypuff?",
+    "answer": "Fairy",
+    "hint": "It is also known for singing."
+  },
+  {
+    "question": "Which Pok\u00e9mon can evolve into Vaporeon, Jolteon, or Flareon?",
+    "answer": "Eevee",
+    "hint": "It has many possible evolutions."
+  },
+  {
+    "question": "What is the evolved form of Magikarp?",
+    "answer": "Gyarados",
+    "hint": "It becomes a powerful sea serpent."
+  },
+  {
+    "question": "Which Pok\u00e9mon is famous for using Self-Destruct?",
+    "answer": "Voltorb",
+    "hint": "It resembles a Pok\u00e9 Ball."
+  },
+  {
+    "question": "Which region debuted in Pok\u00e9mon Gold and Silver?",
+    "answer": "Johto",
+    "hint": "It is home to New Bark Town."
+  },
+  {
+    "question": "What is the professor\u2019s name in Kanto?",
+    "answer": "Professor Oak",
+    "hint": "He gives the original starters."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a sleepy pink blob?",
+    "answer": "Snorlax",
+    "hint": "It often blocks roads."
+  },
+  {
+    "question": "What type is Gengar?",
+    "answer": "Ghost",
+    "hint": "It is a shadowy purple Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon carries a leek?",
+    "answer": "Farfetchd",
+    "hint": "Its name has no apostrophe in this answer format."
+  },
+  {
+    "question": "What is the evolved form of Pichu?",
+    "answer": "Pikachu",
+    "hint": "It evolves with friendship."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Fox Pok\u00e9mon and is Fire-type?",
+    "answer": "Vulpix",
+    "hint": "It has six curled tails."
+  },
+  {
+    "question": "What is the water starter of Hoenn?",
+    "answer": "Mudkip",
+    "hint": "Its evolutions include Marshtomp."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves into Butterfree?",
+    "answer": "Metapod",
+    "hint": "It is a cocoon Pok\u00e9mon."
+  },
+  {
+    "question": "What is the first evolution of Dratini?",
+    "answer": "Dragonair",
+    "hint": "It evolves into Dragonite."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a legendary bird of fire?",
+    "answer": "Moltres",
+    "hint": "The other two are Articuno and Zapdos."
+  },
+  {
+    "question": "Which legendary Pok\u00e9mon represents time?",
+    "answer": "Dialga",
+    "hint": "It is associated with the Diamond version."
+  },
+  {
+    "question": "Which legendary Pok\u00e9mon represents space?",
+    "answer": "Palkia",
+    "hint": "It is associated with the Pearl version."
+  },
+  {
+    "question": "What type is Lucario?",
+    "answer": "Fighting",
+    "hint": "It is also Steel-type."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Aura Pok\u00e9mon?",
+    "answer": "Lucario",
+    "hint": "It can sense a special energy."
+  },
+  {
+    "question": "What is the evolved form of Ralts?",
+    "answer": "Kirlia",
+    "hint": "It can later evolve into Gardevoir."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the mascot of Pok\u00e9mon Gold?",
+    "answer": "HoOh",
+    "hint": "It is a rainbow-colored legendary bird."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the mascot of Pok\u00e9mon Silver?",
+    "answer": "Lugia",
+    "hint": "It is called the Diving Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a small blue penguin starter?",
+    "answer": "Piplup",
+    "hint": "It starts the Sinnoh water line."
+  },
+  {
+    "question": "What is the final evolution of Treecko?",
+    "answer": "Sceptile",
+    "hint": "It is a Grass-type from Hoenn."
+  },
+  {
+    "question": "Which Pok\u00e9mon can change form with different plates?",
+    "answer": "Arceus",
+    "hint": "It is known as the Alpha Pok\u00e9mon."
+  },
+  {
+    "question": "What type is Snivy?",
+    "answer": "Grass",
+    "hint": "It is a Unova starter."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the evolved form of Litwick?",
+    "answer": "Lampent",
+    "hint": "It evolves into Chandelure."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Iron Snake?",
+    "answer": "Steelix",
+    "hint": "It evolves from Onix."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves from Swablu?",
+    "answer": "Altaria",
+    "hint": "It becomes a cloud-like dragon."
+  },
+  {
+    "question": "What is the first stage of the Gastly line?",
+    "answer": "Gastly",
+    "hint": "It evolves into Haunter."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a fossil revived as Rock/Water?",
+    "answer": "Omanyte",
+    "hint": "It resembles an ancient ammonite."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known for copying others?",
+    "answer": "Ditto",
+    "hint": "It transforms into other Pok\u00e9mon."
+  },
+  {
+    "question": "What type is Togepi?",
+    "answer": "Fairy",
+    "hint": "It is a small egg Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the evolution of Sneasel in Sinnoh?",
+    "answer": "Weavile",
+    "hint": "It evolves with a Razor Claw at night."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the Unova fire starter?",
+    "answer": "Tepig",
+    "hint": "It is a pig Pok\u00e9mon."
+  },
+  {
+    "question": "What is the final evolution of Oshawott?",
+    "answer": "Samurott",
+    "hint": "It is a samurai-inspired Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the face of Pok\u00e9mon Black and White?",
+    "answer": "Reshiram",
+    "hint": "It is the white dragon legendary."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the black dragon legendary?",
+    "answer": "Zekrom",
+    "hint": "It is associated with Pok\u00e9mon Black."
+  },
+  {
+    "question": "What type is Greninja?",
+    "answer": "Water",
+    "hint": "It is also Dark-type."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves from Froakie?",
+    "answer": "Frogadier",
+    "hint": "It is the middle stage of the line."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Destruction Pok\u00e9mon?",
+    "answer": "Yveltal",
+    "hint": "It is a Kalos legendary."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the Life Pok\u00e9mon?",
+    "answer": "Xerneas",
+    "hint": "Its antlers glow in many colors."
+  },
+  {
+    "question": "What is the final evolution of Fennekin?",
+    "answer": "Delphox",
+    "hint": "It is a Fire/Psychic fox."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a living ice cream cone?",
+    "answer": "Vanillite",
+    "hint": "It evolves into Vanillish."
+  },
+  {
+    "question": "Which region is home to Lumiose City?",
+    "answer": "Kalos",
+    "hint": "It is inspired by France."
+  },
+  {
+    "question": "What is the evolved form of Rockruff?",
+    "answer": "Lycanroc",
+    "hint": "It has different forms."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a small owl starter from Alola?",
+    "answer": "Rowlet",
+    "hint": "It is Grass/Flying-type."
+  },
+  {
+    "question": "What type is Incineroar?",
+    "answer": "Fire",
+    "hint": "It is also Dark-type."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Disguise Pok\u00e9mon?",
+    "answer": "Mimikyu",
+    "hint": "It wears a rag resembling Pikachu."
+  },
+  {
+    "question": "What is the Alola water starter?",
+    "answer": "Popplio",
+    "hint": "It evolves into Primarina."
+  },
+  {
+    "question": "Which Pok\u00e9mon can summon a Z-Move with Pikachu?",
+    "answer": "Pikachu",
+    "hint": "Its special Z-Move is Catastropika."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a steel/fairy guardian of Alola?",
+    "answer": "Tapu Lele",
+    "hint": "It is one of the island guardians."
+  },
+  {
+    "question": "What is the evolved form of Cosmog?",
+    "answer": "Cosmoem",
+    "hint": "It evolves into Solgaleo or Lunala."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the mascot of Pok\u00e9mon Sun?",
+    "answer": "Solgaleo",
+    "hint": "It resembles a solar lion."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the mascot of Pok\u00e9mon Moon?",
+    "answer": "Lunala",
+    "hint": "It resembles a bat-like moon guardian."
+  },
+  {
+    "question": "What is the Galar grass starter?",
+    "answer": "Grookey",
+    "hint": "It is a mischievous monkey."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves from Scorbunny?",
+    "answer": "Raboot",
+    "hint": "It is the middle stage."
+  },
+  {
+    "question": "What is the final evolution of Sobble?",
+    "answer": "Inteleon",
+    "hint": "It is a secret-agent-like lizard."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a tiny apple dragon?",
+    "answer": "Applin",
+    "hint": "It lives inside an apple."
+  },
+  {
+    "question": "What type is Zacian?",
+    "answer": "Fairy",
+    "hint": "Its Crowned Sword form is Fairy/Steel."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Strong Legs Pok\u00e9mon?",
+    "answer": "Cinderace",
+    "hint": "It is the final Scorbunny evolution."
+  },
+  {
+    "question": "Which region includes Motostoke?",
+    "answer": "Galar",
+    "hint": "It features a large industrial city."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a sheep-like Electric type?",
+    "answer": "Wooloo",
+    "hint": "It is actually Normal-type; think of the yellow sheep."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a penguin-like Steel type with a giant ice head?",
+    "answer": "Eiscue",
+    "hint": "Its head changes with Ice Face."
+  },
+  {
+    "question": "What is the Paldea grass starter?",
+    "answer": "Sprigatito",
+    "hint": "It is a grass cat."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves from Fuecoco?",
+    "answer": "Crocalor",
+    "hint": "It is the middle stage."
+  },
+  {
+    "question": "What is the final evolution of Quaxly?",
+    "answer": "Quaquaval",
+    "hint": "It is a dancing water-type Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Ruinous Pok\u00e9mon of tablets?",
+    "answer": "Wo-Chien",
+    "hint": "It is a Dark/Grass legendary."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the box legendary of Scarlet?",
+    "answer": "Koraidon",
+    "hint": "It has a prehistoric look."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the box legendary of Violet?",
+    "answer": "Miraidon",
+    "hint": "It has a futuristic look."
+  },
+  {
+    "question": "What is the name of Paldea\u2019s main academy in Scarlet?",
+    "answer": "Naranja",
+    "hint": "The academy name is orange in Spanish."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a coin-collecting chest?",
+    "answer": "Gimmighoul",
+    "hint": "It evolves into Gholdengo."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves into Annihilape?",
+    "answer": "Primeape",
+    "hint": "It gains a Ghost type when evolving."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a dolphin that changes form?",
+    "answer": "Palafin",
+    "hint": "Its Hero Form is much stronger."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Virtual Pok\u00e9mon?",
+    "answer": "Porygon",
+    "hint": "It was created with computer technology."
+  },
+  {
+    "question": "Which Pok\u00e9mon has a shell that protects its head?",
+    "answer": "Shellder",
+    "hint": "It evolves into Cloyster."
+  },
+  {
+    "question": "What is the evolved form of Abra?",
+    "answer": "Kadabra",
+    "hint": "It later evolves into Alakazam."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a Fighting-type karate expert?",
+    "answer": "Hitmonlee",
+    "hint": "It is named after a martial artist."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a Fighting-type boxer?",
+    "answer": "Hitmonchan",
+    "hint": "It is named after a boxer."
+  },
+  {
+    "question": "Which Pok\u00e9mon is made of three magnets?",
+    "answer": "Magneton",
+    "hint": "It evolves from Magnemite."
+  },
+  {
+    "question": "What is the evolved form of Houndour?",
+    "answer": "Houndoom",
+    "hint": "It is a Dark/Fire Pok\u00e9mon."
+  },
+  {
+    "question": "Which Pok\u00e9mon is called the Tiny Turtle Pok\u00e9mon?",
+    "answer": "Squirtle",
+    "hint": "It is a Kanto starter."
+  },
+  {
+    "question": "Which Pok\u00e9mon can evolve into Espeon or Umbreon?",
+    "answer": "Eevee",
+    "hint": "Friendship and time of day matter."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a pink healer often found in Pok\u00e9mon Centers?",
+    "answer": "Chansey",
+    "hint": "It carries an egg in a pouch."
+  },
+  {
+    "question": "What type is Onix?",
+    "answer": "Rock",
+    "hint": "It is also Ground-type."
+  },
+  {
+    "question": "Which Pok\u00e9mon evolves into Politoed with a King\u2019s Rock?",
+    "answer": "Poliwhirl",
+    "hint": "It needs trading while holding the item."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a three-headed bird?",
+    "answer": "Dodrio",
+    "hint": "It evolves from Doduo."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a Ground-type with a shovel-like head?",
+    "answer": "Excadrill",
+    "hint": "It is also Steel-type."
+  },
+  {
+    "question": "What is the evolved form of Bagon?",
+    "answer": "Shelgon",
+    "hint": "It evolves into Salamence."
+  },
+  {
+    "question": "Which Pok\u00e9mon is known as the Meteorite Pok\u00e9mon?",
+    "answer": "Minior",
+    "hint": "It has a colorful core."
+  },
+  {
+    "question": "Which Pok\u00e9mon has a spiral shell and psychic powers?",
+    "answer": "Slowpoke",
+    "hint": "It can evolve into Slowbro."
+  },
+  {
+    "question": "Which Pok\u00e9mon is a legendary golem of rock?",
+    "answer": "Regirock",
+    "hint": "It is one of the original Regis."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the guardian of the sea in Hoenn?",
+    "answer": "Kyogre",
+    "hint": "It is a Water-type legendary."
+  },
+  {
+    "question": "Which Pok\u00e9mon is the guardian of land in Hoenn?",
+    "answer": "Groudon",
+    "hint": "It is a Ground-type legendary."
+  },
+  {
+    "question": "Which Pokémon evolves into Charizard?",
+    "answer": "Charmeleon",
+    "hint": "It is the middle stage of the Charmander line."
+  },
+  {
+    "question": "What is the primary type of Charmander?",
+    "answer": "Fire",
+    "hint": "It has a flame burning on its tail."
+  },
+  {
+    "question": "Which Pokémon evolves from Blastoise during Mega Evolution?",
+    "answer": "Mega Blastoise",
+    "hint": "It gains a large central water cannon on its shell."
+  },
+  {
+    "question": "What is the final evolution of Ivysaur?",
+    "answer": "Venusaur",
+    "hint": "It is the Grass/Poison starter fully evolved form from Kanto."
+  },
+  {
+    "question": "Which Pokémon is number 1 in the National Pokédex?",
+    "answer": "Bulbasaur",
+    "hint": "It is the very first entry in the Pokédex."
+  },
+  {
+    "question": "What evolution item is used to evolve Pikachu into Raichu?",
+    "answer": "Thunder Stone",
+    "hint": "It is an elemental stone associated with electricity."
+  },
+  {
+    "question": "Which Pokémon is the pre-evolution of Raichu in Alola form?",
+    "answer": "Pikachu",
+    "hint": "It uses a Thunder Stone in the Alola region."
+  },
+  {
+    "question": "What type is Clefairy?",
+    "answer": "Fairy",
+    "hint": "It was changed from Normal to this type in Generation VI."
+  },
+  {
+    "question": "Which Pokémon evolves into Nidoqueen?",
+    "answer": "Nidorina",
+    "hint": "It evolves when exposed to a Moon Stone."
+  },
+  {
+    "question": "Which Pokémon evolves into Nidoking?",
+    "answer": "Nidorino",
+    "hint": "It is the male counterpart evolution using a Moon Stone."
+  },
+  {
+    "question": "What is the evolved form of Psyduck?",
+    "answer": "Golduck",
+    "hint": "It is a blue Water-type duck Pokémon."
+  },
+  {
+    "question": "Which Pokémon is famous for having constant headaches?",
+    "answer": "Psyduck",
+    "hint": "Its psychic powers trigger when its headache severe."
+  },
+  {
+    "question": "What type is Machop?",
+    "answer": "Fighting",
+    "hint": "It loves weightlifting and martial arts."
+  },
+  {
+    "question": "What is the final evolution of Machop?",
+    "answer": "Machamp",
+    "hint": "It has four powerful arms."
+  },
+  {
+    "question": "Which item is required to evolve Poliwhirl into Poliwrath?",
+    "answer": "Water Stone",
+    "hint": "It turns Poliwhirl into a Fighting/Water type."
+  },
+  {
+    "question": "What is the evolved form of Tentacool?",
+    "answer": "Tentacruel",
+    "hint": "It has 80 tentacles in lore."
+  },
+  {
+    "question": "Which Pokémon is known as the Rock Snake Pokémon?",
+    "answer": "Onix",
+    "hint": "It burrows underground at high speeds."
+  },
+  {
+    "question": "What is the final evolution of Geodude?",
+    "answer": "Golem",
+    "hint": "It evolves from Graveler when traded."
+  },
+  {
+    "question": "Which Pokémon evolves from Slowpoke when traded with a King's Rock?",
+    "answer": "Slowking",
+    "hint": "Shellder bites its head instead of its tail."
+  },
+  {
+    "question": "What type is Haunter?",
+    "answer": "Ghost",
+    "hint": "It is a dual Ghost/Poison type."
+  },
+  {
+    "question": "Which evolution stone is needed to evolve Staryu into Starmie?",
+    "answer": "Water Stone",
+    "hint": "It unlocks its jewel core's true power."
+  },
+  {
+    "question": "Which Pokémon is known as the Scythe Pokémon?",
+    "answer": "Scyther",
+    "hint": "It has sharp blade-like arms."
+  },
+  {
+    "question": "What is the Steel-type evolution of Scyther?",
+    "answer": "Scizor",
+    "hint": "It evolves when traded holding Metal Coat."
+  },
+  {
+    "question": "Which Pokémon evolves into Electabuzz?",
+    "answer": "Elekid",
+    "hint": "It is a baby Pokémon introduced in Generation II."
+  },
+  {
+    "question": "What is the final evolution of Electabuzz?",
+    "answer": "Electivire",
+    "hint": "It evolves when traded with an Electirizer."
+  },
+  {
+    "question": "Which Pokémon evolves from Magby?",
+    "answer": "Magmar",
+    "hint": "It is a Fire-type introduced in Gen I."
+  },
+  {
+    "question": "What is the final evolution of Magmar?",
+    "answer": "Magmortar",
+    "hint": "It shoots fireballs out of its arm cannons."
+  },
+  {
+    "question": "Which Pokémon is known as the Atrocious Pokémon?",
+    "answer": "Gyarados",
+    "hint": "It is famous for going on destructive rages."
+  },
+  {
+    "question": "What type is Lapras?",
+    "answer": "Water",
+    "hint": "It is a dual Water/Ice type sea transport."
+  },
+  {
+    "question": "Which Pokémon was genetically created in a lab?",
+    "answer": "Mewtwo",
+    "hint": "It was cloned from Mew's DNA."
+  },
+  {
+    "question": "Which Pokémon is number 151 in the National Pokédex?",
+    "answer": "Mew",
+    "hint": "It is said to possess the genetic composition of all Pokémon."
+  },
+  {
+    "question": "Which Pokémon is known as the Electric Legendary Bird?",
+    "answer": "Zapdos",
+    "hint": "It controls thunder and lightning in Kanto."
+  },
+  {
+    "question": "Which Pokémon is known as the Ice Legendary Bird?",
+    "answer": "Articuno",
+    "hint": "It freezes moisture in the air to make snow."
+  },
+  {
+    "question": "What is the Grass starter of Johto?",
+    "answer": "Chikorita",
+    "hint": "It has a leaf on its head."
+  },
+  {
+    "question": "What is the Fire starter of Johto?",
+    "answer": "Cyndaquil",
+    "hint": "Flames burst from its back when angry."
+  },
+  {
+    "question": "What is the Water starter of Johto?",
+    "answer": "Totodile",
+    "hint": "It is a jaw-snapping crocodilian Pokémon."
+  },
+  {
+    "question": "What is the final evolution of Chikorita?",
+    "answer": "Meganium",
+    "hint": "It has a large pink flower around its neck."
+  },
+  {
+    "question": "What is the final evolution of Cyndaquil?",
+    "answer": "Typhlosion",
+    "hint": "It creates fierce heat haze and explosions."
+  },
+  {
+    "question": "What is the final evolution of Totodile?",
+    "answer": "Feraligatr",
+    "hint": "It moves fast despite its heavy body."
+  },
+  {
+    "question": "Which Pokémon evolves into Togetic?",
+    "answer": "Togepi",
+    "hint": "It evolves with high friendship."
+  },
+  {
+    "question": "What item is used to evolve Togetic into Togekiss?",
+    "answer": "Shiny Stone",
+    "hint": "It transforms Togetic into a Fairy/Flying type."
+  },
+  {
+    "question": "Which Pokémon is known as the Wool Pokémon in Johto?",
+    "answer": "Mareep",
+    "hint": "It generates static electricity in its fleece."
+  },
+  {
+    "question": "What is the final evolution of Mareep?",
+    "answer": "Ampharos",
+    "hint": "Its tail light can be seen from space."
+  },
+  {
+    "question": "Which Pokémon evolves from Wooper?",
+    "answer": "Quagsire",
+    "hint": "It is a dual Water/Ground type."
+  },
+  {
+    "question": "What type is Espeon?",
+    "answer": "Psychic",
+    "hint": "It is the Sun Pokémon evolution of Eevee."
+  },
+  {
+    "question": "What type is Umbreon?",
+    "answer": "Dark",
+    "hint": "It is the Moonlight Pokémon evolution of Eevee."
+  },
+  {
+    "question": "Which legendary Pokémon is known as the Rainbow Pokémon?",
+    "answer": "HoOh",
+    "hint": "It flies continuously through the sky leaving a rainbow."
+  },
+  {
+    "question": "Which legendary Pokémon resides at the bottom of the Whirl Islands?",
+    "answer": "Lugia",
+    "hint": "It calms storms and is the master of the legendary birds."
+  },
+  {
+    "question": "Which Pokémon is the Time Travel Pokémon?",
+    "answer": "Celebi",
+    "hint": "It is the mythical Grass/Psychic Pokémon of Johto."
+  },
+  {
+    "question": "Which beast represents the lightning that struck the Brass Tower?",
+    "answer": "Raikou",
+    "hint": "It is the Electric-type legendary beast of Johto."
+  },
+  {
+    "question": "Which beast represents the fire that burned the Brass Tower?",
+    "answer": "Entei",
+    "hint": "It is the Fire-type legendary beast of Johto."
+  },
+  {
+    "question": "Which beast represents the rain that quenched the Brass Tower?",
+    "answer": "Suicune",
+    "hint": "It embodies the purity of spring water."
+  },
+  {
+    "question": "What is the Grass starter of Hoenn?",
+    "answer": "Treecko",
+    "hint": "It is a wood gecko Pokémon."
+  },
+  {
+    "question": "What is the Fire starter of Hoenn?",
+    "answer": "Torchic",
+    "hint": "It is a small chick Pokémon."
+  },
+  {
+    "question": "What is the final evolution of Torchic?",
+    "answer": "Blaziken",
+    "hint": "It is a Fire/Fighting martial artist bird."
+  },
+  {
+    "question": "What is the final evolution of Mudkip?",
+    "answer": "Swampert",
+    "hint": "It is a dual Water/Ground beast from Hoenn."
+  },
+  {
+    "question": "Which Pokémon is known as the Tiny Swallow Pokémon?",
+    "answer": "Taallow",
+    "hint": "It evolves into Swellow."
+  },
+  {
+    "question": "What type is Gardevoir?",
+    "answer": "Psychic",
+    "hint": "It is dual Psychic/Fairy type."
+  },
+  {
+    "question": "Which evolution stone transforms Kirlia into Gallade?",
+    "answer": "Dawn Stone",
+    "hint": "It only works on male Kirlia."
+  },
+  {
+    "question": "Which Pokémon is known as the Sloth Pokémon?",
+    "answer": "Slakoth",
+    "hint": "It spends 20 hours a day lying down."
+  },
+  {
+    "question": "What is the evolved form of Slakoth?",
+    "answer": "Vigoroth",
+    "hint": "Unlike its pre-evolution, it never stays still."
+  },
+  {
+    "question": "What is the final evolution of Slakoth?",
+    "answer": "Slaking",
+    "hint": "It has the Truant ability."
+  },
+  {
+    "question": "Which Pokémon is known as the Whisper Pokémon?",
+    "answer": "Whismur",
+    "hint": "It cries continuously when startled."
+  },
+  {
+    "question": "What is the final evolution of Whismur?",
+    "answer": "Exploud",
+    "hint": "It emits sound waves loud enough to cause earthquakes."
+  },
+  {
+    "question": "Which Pokémon evolves into Mawile?",
+    "answer": "Mawile",
+    "hint": "It has no pre-evolution."
+  },
+  {
+    "question": "Which Pokémon is known as the Iron Armor Pokémon?",
+    "answer": "Aron",
+    "hint": "It eats iron ore to build its steel body."
+  },
+  {
+    "question": "What is the final evolution of Aron?",
+    "answer": "Aggron",
+    "hint": "It claims an entire mountain as its territory."
+  },
+  {
+    "question": "Which Pokémon evolves into Medicham?",
+    "answer": "Meditite",
+    "hint": "It practices yoga meditation."
+  },
+  {
+    "question": "What type is Sharpedo?",
+    "answer": "Water",
+    "hint": "It is dual Water/Dark and known as the Brutal Pokémon."
+  },
+  {
+    "question": "Which Pokémon is known as the Fly Scorpion Pokémon?",
+    "answer": "Gligar",
+    "hint": "It glides through the air and aims for faces."
+  },
+  {
+    "question": "What item evolves Gligar into Gliscor?",
+    "answer": "Razor Fang",
+    "hint": "It must level up holding this item at night."
+  },
+  {
+    "question": "What type is Flygon?",
+    "answer": "Ground",
+    "hint": "It is a dual Ground/Dragon type known as the Mystic Pokémon."
+  },
+  {
+    "question": "Which Pokémon evolves into Flygon?",
+    "answer": "Vibrava",
+    "hint": "It evolves from Trapinch first."
+  },
+  {
+    "question": "What is the first evolution stage in the Trapinch line?",
+    "answer": "Trapinch",
+    "hint": "It builds pitfall traps in sand dunes."
+  },
+  {
+    "question": "Which Pokémon is known as the Weather Pokémon?",
+    "answer": "Castform",
+    "hint": "It changes form according to rain, sun, or hail."
+  },
+  {
+    "question": "What type is Milotic?",
+    "answer": "Water",
+    "hint": "It is said to be the most beautiful of all Pokémon."
+  },
+  {
+    "question": "Which Pokémon evolves into Milotic?",
+    "answer": "Feebas",
+    "hint": "It evolves when its Beauty stat is maxed or via Prism Scale trade."
+  },
+  {
+    "question": "Which Pokémon is known as the Sky High Pokémon?",
+    "answer": "Rayquaza",
+    "hint": "It lives in the ozone layer and stops Groudon and Kyogre."
+  },
+  {
+    "question": "Which mythical Pokémon wish-maker wakes up every 1000 years?",
+    "answer": "Jirachi",
+    "hint": "It grants wishes written on paper tags on its head."
+  },
+  {
+    "question": "Which DNA Pokémon originated from a space virus?",
+    "answer": "Deoxys",
+    "hint": "It has Attack, Defense, Speed, and Normal forms."
+  },
+  {
+    "question": "What is the Fire starter of Sinnoh?",
+    "answer": "Chimchar",
+    "hint": "It is a playful chimp with a burning tail."
+  },
+  {
+    "question": "What is the Grass starter of Sinnoh?",
+    "answer": "Turtwig",
+    "hint": "It is a tiny leaf turtle."
+  },
+  {
+    "question": "What is the final evolution of Turtwig?",
+    "answer": "Torterra",
+    "hint": "It carries a small ecosystem/tree on its shell."
+  },
+  {
+    "question": "What is the final evolution of Chimchar?",
+    "answer": "Infernape",
+    "hint": "It is a Fire/Fighting martial arts monkey."
+  },
+  {
+    "question": "What is the final evolution of Piplup?",
+    "answer": "Empoleon",
+    "hint": "It is an Emperor penguin with a trident crown."
+  },
+  {
+    "question": "Which Pokémon is known as the Starling Pokémon?",
+    "answer": "Starly",
+    "hint": "It is the regional bird of Sinnoh."
+  },
+  {
+    "question": "What is the final evolution of Starly?",
+    "answer": "Staraptor",
+    "hint": "It uses Close Combat despite being a Flying type."
+  },
+  {
+    "question": "Which Pokémon evolves into Luxray?",
+    "answer": "Luxio",
+    "hint": "It evolves from Shinx."
+  },
+  {
+    "question": "What is the first stage of the Luxray evolutionary line?",
+    "answer": "Shinx",
+    "hint": "It is a blue Electric-type lion cub."
+  },
+  {
+    "question": "Which Pokémon is known as the Shield Pokémon fossil in Sinnoh?",
+    "answer": "Shieldon",
+    "hint": "It evolves into Bastiodon."
+  },
+  {
+    "question": "Which Pokémon is known as the Skull Pokémon fossil in Sinnoh?",
+    "answer": "Cranidos",
+    "hint": "It evolves into Rampardos."
+  },
+  {
+    "question": "What type is Gastrodon?",
+    "answer": "Water",
+    "hint": "It is dual Water/Ground and comes in West and East forms."
+  },
+  {
+    "question": "Which Pokémon evolves into Drifblim?",
+    "answer": "Drifloon",
+    "hint": "It looks like a purple balloon carrying children away."
+  },
+  {
+    "question": "What type is Spiritomb?",
+    "answer": "Ghost",
+    "hint": "It is bound to an Odd Keystone and composed of 108 spirits."
+  },
+  {
+    "question": "What is the evolved form of Gible?",
+    "answer": "Gabite",
+    "hint": "It evolves into Garchomp."
+  },
+  {
+    "question": "What is the final evolution of Gible?",
+    "answer": "Garchomp",
+    "hint": "It is Cynthia's signature Dragon/Ground land shark."
+  },
+  {
+    "question": "Which evolution stone turns Eevee into Leafeon in later games?",
+    "answer": "Leaf Stone",
+    "hint": "It previously required levelling up near a Moss Rock."
+  },
+  {
+    "question": "Which evolution stone turns Eevee into Glaceon in later games?",
+    "answer": "Ice Stone",
+    "hint": "It previously required levelling up near an Ice Rock."
+  },
+  {
+    "question": "Which legendary Pokémon resides in the Distortion World?",
+    "answer": "Giratina",
+    "hint": "It represents antimatter and has Origin/Altered forms."
+  },
+  {
+    "question": "Which Pokémon is known as the Lunar Pokémon?",
+    "answer": "Cresselia",
+    "hint": "It represents the crescent moon and dispels nightmares."
+  },
+  {
+    "question": "Which mythical Pokémon is known as the Pitch-Black Pokémon?",
+    "answer": "Darkrai",
+    "hint": "It causes terrifying, endless nightmares."
+  },
+  {
+    "question": "Which mythical Pokémon is known as the Gratitude Pokémon?",
+    "answer": "Shaymin",
+    "hint": "It has Land Forme and Sky Forme."
+  },
+  {
+    "question": "What is the Water starter of Unova?",
+    "answer": "Oshawott",
+    "hint": "It uses a Scalchop shell on its belly."
+  },
+  {
+    "question": "What is the final evolution of Tepig?",
+    "answer": "Emboar",
+    "hint": "It is a Fire/Fighting mega fire pig."
+  },
+  {
+    "question": "What is the final evolution of Snivy?",
+    "answer": "Serperior",
+    "hint": "It is a regal grass snake."
+  },
+  {
+    "question": "Which Pokémon is known as the Puppy Pokémon in Unova?",
+    "answer": "Lillipup",
+    "hint": "It evolves into Herdier."
+  },
+  {
+    "question": "What is the final evolution of Lillipup?",
+    "answer": "Stoutland",
+    "hint": "It has a thick mustache and rescues stranded people."
+  },
+  {
+    "question": "Which Pokémon evolves into Zebstrika?",
+    "answer": "Blitzle",
+    "hint": "It is an Electric-type zebra."
+  },
+  {
+    "question": "What type is Excadrill?",
+    "answer": "Ground",
+    "hint": "It is dual Ground/Steel type."
+  },
+  {
+    "question": "What is the first stage of the Excadrill line?",
+    "answer": "Drilbur",
+    "hint": "It spins like a drill underground."
+  },
+  {
+    "question": "Which Pokémon evolves from Timburr?",
+    "answer": "Gurdurr",
+    "hint": "It carries an I-beam girder."
+  },
+  {
+    "question": "What is the final evolution of Timburr?",
+    "answer": "Conkeldurr",
+    "hint": "It uses concrete pillars as walking canes."
+  },
+  {
+    "question": "Which Pokémon is known as the Tympole final evolution?",
+    "answer": "Seismitoad",
+    "hint": "It shoots vibration waves out of its lumps."
+  },
+  {
+    "question": "Which Pokémon evolves into Leavanny?",
+    "answer": "Swadloon",
+    "hint": "It evolves with high friendship."
+  },
+  {
+    "question": "What type is Scolipede?",
+    "answer": "Bug",
+    "hint": "It is dual Bug/Poison giant centipede."
+  },
+  {
+    "question": "What is the first stage of the Scolipede line?",
+    "answer": "Venipede",
+    "hint": "It bites with poisonous fangs."
+  },
+  {
+    "question": "Which Pokémon is known as the Cottonweed/Cotton-ball Pokémon?",
+    "answer": "Cottonee",
+    "hint": "It evolves into Whimsicott using a Sun Stone."
+  },
+  {
+    "question": "Which evolution stone transforms Petilil into Lilligant?",
+    "answer": "Sun Stone",
+    "hint": "It makes Petilil bloom into a beautiful dancer."
+  },
+  {
+    "question": "What type is Krookodile?",
+    "answer": "Ground",
+    "hint": "It is dual Ground/Dark desert crocodile."
+  },
+  {
+    "question": "What is the first stage of the Krookodile line?",
+    "answer": "Sandile",
+    "hint": "It swims in desert sand."
+  },
+  {
+    "question": "Which Pokémon is known as the Chinchilla Pokémon?",
+    "answer": "Minccino",
+    "hint": "It uses its tail to clean everything."
+  },
+  {
+    "question": "Which item evolves Minccino into Cinccino?",
+    "answer": "Shiny Stone",
+    "hint": "It coats its fur in a special white oil."
+  },
+  {
+    "question": "What is the final evolution of Litwick?",
+    "answer": "Chandelure",
+    "hint": "It burns spirits to fuel its ghostly flames."
+  },
+  {
+    "question": "What type is Hydreigon?",
+    "answer": "Dark",
+    "hint": "It is dual Dark/Dragon three-headed terror."
+  },
+  {
+    "question": "What is the first stage of the Hydreigon line?",
+    "answer": "Deino",
+    "hint": "It cannot see and bites everything around it."
+  },
+  {
+    "question": "What is the middle stage of the Hydreigon line?",
+    "answer": "Zweilous",
+    "hint": "Its two heads do not get along."
+  },
+  {
+    "question": "Which dragon Pokémon represents boundary and completeness in Unova?",
+    "answer": "Kyurem",
+    "hint": "It can fuse with Reshiram or Zekrom."
+  },
+  {
+    "question": "What is the Grass starter of Kalos?",
+    "answer": "Chespin",
+    "hint": "It is a spiky nut Pokémon."
+  },
+  {
+    "question": "What is the Fire starter of Kalos?",
+    "answer": "Fennekin",
+    "hint": "It eats twigs and shoots hot air from its ears."
+  },
+  {
+    "question": "What is the Water starter of Kalos?",
+    "answer": "Froakie",
+    "hint": "It uses foam frubbles for protection."
+  },
+  {
+    "question": "What is the final evolution of Chespin?",
+    "answer": "Chesnaught",
+    "hint": "It is a Grass/Fighting armored juggernaut."
+  },
+  {
+    "question": "Which Pokémon is the Fairy-type evolution of Eevee?",
+    "answer": "Sylveon",
+    "hint": "It evolves with friendship and a Fairy-type move."
+  },
+  {
+    "question": "Which Pokémon is known as the Robin Pokémon in Kalos?",
+    "answer": "Fletchling",
+    "hint": "It evolves into Fletchinder."
+  },
+  {
+    "question": "What is the final evolution of Fletchling?",
+    "answer": "Talonflame",
+    "hint": "It is a Fire/Flying bird famous for its speed."
+  },
+  {
+    "question": "Which Pokémon is known as the Scatterbug final evolution?",
+    "answer": "Vivillon",
+    "hint": "Its wing patterns depend on real-world geographic regions."
+  },
+  {
+    "question": "Which Pokémon evolves into Pyroar?",
+    "answer": "Litleo",
+    "hint": "It has male and female distinct appearances."
+  },
+  {
+    "question": "What type is Aegislash?",
+    "answer": "Steel",
+    "hint": "It is dual Steel/Ghost and switches between Blade and Shield Forms."
+  },
+  {
+    "question": "What is the first stage of the Aegislash line?",
+    "answer": "Honedge",
+    "hint": "It resembles an ancient sword wrapped in a sash."
+  },
+  {
+    "question": "What is the middle stage of the Aegislash line?",
+    "answer": "Doublade",
+    "hint": "It consists of two crossed swords."
+  },
+  {
+    "question": "Which evolution stone transforms Doublade into Aegislash?",
+    "answer": "Dusk Stone",
+    "hint": "It bestows ghostly shield powers."
+  },
+  {
+    "question": "What type is Goodra?",
+    "answer": "Dragon",
+    "hint": "It is a friendly dragon covered in slime."
+  },
+  {
+    "question": "What is the first stage of the Goodra line?",
+    "answer": "Goomy",
+    "hint": "It is considered the weakest Dragon-type Pokémon."
+  },
+  {
+    "question": "What is the middle stage of the Goodra line?",
+    "answer": "Sliggoo",
+    "hint": "It evolves into Goodra during rain."
+  },
+  {
+    "question": "Which Pokémon is known as the Order Pokémon in Kalos?",
+    "answer": "Zygarde",
+    "hint": "It consists of Cells/Cores and reaches 100% Complete Form."
+  },
+  {
+    "question": "What is the Fire starter of Alola?",
+    "answer": "Litten",
+    "hint": "It sheds flaming fur balls."
+  },
+  {
+    "question": "What is the final evolution of Rowlet?",
+    "answer": "Decidueye",
+    "hint": "It is a Grass/Ghost archer owl."
+  },
+  {
+    "question": "What is the final evolution of Popplio?",
+    "answer": "Primarina",
+    "hint": "It is a Water/Fairy operatic siren seal."
+  },
+  {
+    "question": "Which Pokémon evolves from Litten?",
+    "answer": "Torracat",
+    "hint": "It wears a bell-like flame organ on its neck."
+  },
+  {
+    "question": "Which Pokémon evolves from Popplio?",
+    "answer": "Brionne",
+    "hint": "It dances merrily in water."
+  },
+  {
+    "question": "Which Pokémon evolves from Rowlet?",
+    "answer": "Dartrix",
+    "hint": "It throws blade-quills with precision."
+  },
+  {
+    "question": "Which Pokémon is known as the Woodpercker Pokémon in Alola?",
+    "answer": "Pikipek",
+    "hint": "It evolves into Trumbeak."
+  },
+  {
+    "question": "What is the final evolution of Pikipek?",
+    "answer": "Toucannon",
+    "hint": "Its beak heats up during attacks."
+  },
+  {
+    "question": "Which Pokémon evolves into Vikavolt?",
+    "answer": "Charjabug",
+    "hint": "It looks like a battery block."
+  },
+  {
+    "question": "What is the first stage of the Vikavolt line?",
+    "answer": "Grubbin",
+    "hint": "It uses its strong jaws to scrape trees."
+  },
+  {
+    "question": "Which Pokémon is the Electric/Steel guardian of Melemele Island?",
+    "answer": "Tapu Koko",
+    "hint": "It protects Melemele Island."
+  },
+  {
+    "question": "Which Pokémon is the Grass/Fairy guardian of Akala Island?",
+    "answer": "Tapu Bulu",
+    "hint": "It protects Ula'ula Island."
+  },
+  {
+    "question": "Which Pokémon is the Water/Fairy guardian of Poni Island?",
+    "answer": "Tapu Fini",
+    "hint": "It creates misty fogs to blind foes."
+  },
+  {
+    "question": "Which Ultra Beast is known by code name UB-01 Symbiont?",
+    "answer": "Nihilego",
+    "hint": "It resembles a glassy jellyfish."
+  },
+  {
+    "question": "Which Ultra Beast is known by code name UB-02 Absorption?",
+    "answer": "Buzzwole",
+    "hint": "It is a massive muscle mosquito."
+  },
+  {
+    "question": "Which legendary Pokémon controls light in Ultra Space?",
+    "answer": "Necrozma",
+    "hint": "It can absorb Solgaleo or Lunala."
+  },
+  {
+    "question": "What is the Fire starter of Galar?",
+    "answer": "Scorbunny",
+    "hint": "It runs around generating heat energy."
+  },
+  {
+    "question": "What is the Water starter of Galar?",
+    "answer": "Sobble",
+    "hint": "Its tears cause everyone around to cry."
+  },
+  {
+    "question": "What is the final evolution of Grookey?",
+    "answer": "Rillaboom",
+    "hint": "It uses a wooden drum in battle."
+  },
+  {
+    "question": "Which Pokémon evolves from Grookey?",
+    "answer": "Thwackey",
+    "hint": "It practices rhythm using two sticks."
+  },
+  {
+    "question": "Which Pokémon evolves from Sobble?",
+    "answer": "Drizzile",
+    "hint": "It sets water traps using its moisture."
+  },
+  {
+    "question": "Which Pokémon is known as the Corviknight first stage?",
+    "answer": "Rookidee",
+    "hint": "It is a tiny blue bird in Galar."
+  },
+  {
+    "question": "What is the middle stage of the Corviknight line?",
+    "answer": "Corvisquire",
+    "hint": "It uses handheld stones to strike enemies."
+  },
+  {
+    "question": "What type is Corviknight?",
+    "answer": "Flying",
+    "hint": "It is dual Flying/Steel and acts as the taxi service."
+  },
+  {
+    "question": "Which Pokémon evolves into Drednaw?",
+    "answer": "Chewtle",
+    "hint": "It bites down on anything with its sharp horn."
+  },
+  {
+    "question": "What type is Coalossal?",
+    "answer": "Rock",
+    "hint": "It is dual Rock/Fire."
+  },
+  {
+    "question": "What is the first stage of the Coalossal line?",
+    "answer": "Rolycoly",
+    "hint": "It moves around like a wheel made of coal."
+  },
+  {
+    "question": "What is the middle stage of the Coalossal line?",
+    "answer": "Carkol",
+    "hint": "It runs like a locomotive train."
+  },
+  {
+    "question": "Which Pokémon is the legendary shield hero of Galar?",
+    "answer": "Zamazenta",
+    "hint": "Its Crowned Shield form is Fighting/Steel."
+  },
+  {
+    "question": "Which legendary Pokémon caused the Darkest Day in Galar?",
+    "answer": "Eternatus",
+    "hint": "It powers up Dynamax phenomena."
+  },
+  {
+    "question": "Which martial arts Pokémon evolves into Urshifu?",
+    "answer": "Kubfu",
+    "hint": "It evolves into Single Strike or Rapid Strike styles."
+  },
+  {
+    "question": "What is the Water starter of Paldea?",
+    "answer": "Quaxly",
+    "hint": "It keeps its feathers gelled cleanly."
+  },
+  {
+    "question": "What is the Fire starter of Paldea?",
+    "answer": "Fuecoco",
+    "hint": "It is a relaxed fire crocodilian."
+  },
+  {
+    "question": "What is the final evolution of Sprigatito?",
+    "answer": "Meowscarada",
+    "hint": "It is a magician Grass/Dark cat."
+  },
+  {
+    "question": "What is the final evolution of Fuecoco?",
+    "answer": "Skeledirge",
+    "hint": "It has a fiery bird singing on its snout."
+  },
+  {
+    "question": "Which Pokémon evolves from Sprigatito?",
+    "answer": "Floragato",
+    "hint": "It wields a flower bud attached to a vine like a yo-yo."
+  },
+  {
+    "question": "Which Pokémon evolves from Quaxly?",
+    "answer": "Quaxwell",
+    "hint": "It practices rhythmic leg strikes."
+  },
+  {
+    "question": "Which Pokémon is known as the Lechkoin / Pig Pokémon in Paldea?",
+    "answer": "Lechonk",
+    "hint": "It spends all day searching for gourmet berries."
+  },
+  {
+    "question": "What is the evolved form of Lechonk?",
+    "answer": "Oinkologne",
+    "hint": "It has distinct male and female scents/appearances."
+  },
+  {
+    "question": "Which Electric mouse Pokémon in Paldea evolves into Pawmot?",
+    "answer": "Pawmi",
+    "hint": "It charges electricity in its front paws."
+  },
+  {
+    "question": "What is the middle stage of the Pawmot line?",
+    "answer": "Pawmo",
+    "hint": "It stands on two legs and strikes with electric fists."
+  },
+  {
+    "question": "Which Pokémon evolves into Tinkaton?",
+    "answer": "Tinkatuff",
+    "hint": "It evolves from Tinkatink."
+  },
+  {
+    "question": "What is the first stage of the Tinkaton line?",
+    "answer": "Tinkatink",
+    "hint": "It crafts a small rattle-hammer out of scrap iron."
+  },
+  {
+    "question": "What type is Tinkaton?",
+    "answer": "Fairy",
+    "hint": "It is dual Fairy/Steel and carries a giant 200kg hammer."
+  },
+  {
+    "question": "Which Ruinous Pokémon represents hatred and resembles a leopard made of sword metal?",
+    "answer": "Chien-Pao",
+    "hint": "It is a Dark/Ice legendary in Paldea."
+  },
+  {
+    "question": "Which Ruinous Pokémon represents envy and resembles a vessel/cauldron turtle?",
+    "answer": "Ting-Lu",
+    "hint": "It is a Dark/Ground legendary in Paldea."
+  },
+  {
+    "question": "Which Ruinous Pokémon represents greed and resembles wooden beads goldfish?",
+    "answer": "Chi-Yu",
+    "hint": "It is a Dark/Fire legendary in Paldea."
+  },
+  {
+    "question": "Which Paradox Pokémon resembles a ancient ancestor of Donphan?",
+    "answer": "Great Tusk",
+    "hint": "It is found exclusively in Pokémon Scarlet."
+  },
+  {
+    "question": "Which Paradox Pokémon resembles a futuristic robot version of Donphan?",
+    "answer": "Iron Treads",
+    "hint": "It is found exclusively in Pokémon Violet."
+  },
+  {
+    "question": "Which legendary Pokémon is featured in The Teal Mask DLC of Scarlet & Violet?",
+    "answer": "Ogerpon",
+    "hint": "It wears different masks to change its typing."
+  },
+  {
+    "question": "Which legendary Pokémon is featured in The Indigo Disk DLC of Scarlet & Violet?",
+    "answer": "Terapagos",
+    "hint": "It is the source of the Terastal phenomenon."
+  }
+]
