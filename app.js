@@ -46,7 +46,7 @@ function renderTic(){
   let board=Array(9).fill(''),turn='X',over=false,mode='computer';
   const lines=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
   const win=()=>{for(const [a,b,c] of lines)if(board[a]&&board[a]===board[b]&&board[a]===board[c])return board[a];return board.every(Boolean)?'draw':null};
-  const paint=()=>{modalBody.querySelectorAll('[data-cell]').forEach(b=>{const v=board[+b.dataset.cell];b.innerHTML=v?`<img src="/${v==='X'?'pikachu':'mimikyu'}.png" alt="${v==='X'?'Pikachu':'Mimikyu'}">`:'';b.disabled=!!v||over||(mode==='computer'&&turn==='O')});};
+  const paint=()=>{modalBody.querySelectorAll('[data-cell]').forEach(b=>{const v=board[+b.dataset.cell];b.innerHTML=v?`<img src="poketalk/${v==='X'?'pikachu':'mimikyu'}.png" alt="${v==='X'?'Pikachu':'Mimikyu'}">`:'';b.disabled=!!v||over||(mode==='computer'&&turn==='O')});};
   const status=()=>{const result=win();if(result==='draw')$('#ticStatus').textContent='Draw game! Try again.';else if(result)$('#ticStatus').textContent=mode==='computer'?(result==='X'?'You win! Pikachu wins! ⚡':'Computer wins! Mimikyu takes this round.'):`${result==='X'?'Pikachu':'Mimikyu'} wins!`;else $('#ticStatus').textContent=mode==='computer'?(turn==='X'?'Your turn — Pikachu':'Computer is thinking…'):`${turn==='X'?'Pikachu':'Mimikyu'}'s turn`;};
   function finishIfNeeded(){const result=win();if(!result)return false;over=true;paint();status();if(result==='draw')sfx('draw');else if(mode==='computer'&&result==='O')sfx('lose');else sfx('win');return true;}
   function computerMove(){if(over||mode!=='computer'||turn!=='O')return;let best=-Infinity,choice=-1;function scoreBoard(player,depth){const r=win();if(r==='O')return 10-depth;if(r==='X')return depth-10;if(r==='draw')return 0;return null}function minimax(player,depth){const r=scoreBoard(player,depth);if(r!==null)return r;let vals=[];for(let i=0;i<9;i++)if(!board[i]){board[i]=player;vals.push({i,score:minimax(player==='O'?'X':'O',depth+1)});board[i]=''}return player==='O'?Math.max(...vals.map(v=>v.score)):Math.min(...vals.map(v=>v.score))}for(let i=0;i<9;i++)if(!board[i]){board[i]='O';const value=minimax('X',0);board[i]='';if(value>best){best=value;choice=i}}if(choice>=0){board[choice]='O';sfx('move');if(!finishIfNeeded()){turn='X';paint();status()}}}
@@ -1103,14 +1103,14 @@ function renderHangman(){let entry,word,guessed,wrong;function start(){entry=han
 //Shadow Pokemons
 
 const silhouettes=[{name:'Raichu',file:'silhouette1.png',opts:['Pikachu','Raichu','Eevee','Pichu']},{name:'Dragonite',file:'silhouette2.png',opts:['Dragonite','Gengar','Mimikyu','Haunter']},{name:'Ganger',file:'silhouette3.png',opts:['Dragonite','Ganger','Moltres','Salamence']},{name:'Charizard',file:'silhouette4.png',opts:['Eevee','Vulpix','Growlithe','Charizard']},{name:'MewTwo',file:'silhouette5.png',opts:['Machop','Lucario','Riolu','MewTwo']},{name:'Lugia',file:'silhouette6.png',opts:['Slowpoke','Lugia','Munchlax','Ditto']},{name:'Pikachu',file:'silhouette7.png',opts:['Pikachu','Articuno','Pidgeot','Altaria']},{name:'Gyarados',file:'silhouette8.png',opts:['Pikachu','Mimikyu','Dedenne','Gyarados']}];
-function renderSilhouette(){let idx=0,score=0,round=0,current;function next(){if(round>=10){shell(`<h3>Shadow scout complete!</h3><p>You identified <b>${score} / 10</b> Pokémon.</p><button id="silAgain">Play again ↻</button>`);$('#silAgain').onclick=()=>{idx=0;score=0;round=0;next()};return}current=silhouettes[Math.floor(Math.random()*silhouettes.length)];idx++;round++;draw()}function draw(){shell(`<p>Pick the name that matches the shadow. Round ${round} of 10 · Score ${score}</p><img class="silhouette-img" src="/${current.file}" alt="Black Pokémon silhouette"><div class="answer-options">${[...current.opts].sort(()=>Math.random()-.5).map(x=>`<button data-answer="${x}">${x}</button>`).join('')}</div><p id="silFeedback" class="game-status">Choose carefully!</p><button id="silNext" hidden>Next shadow →</button>`);modalBody.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{modalBody.querySelectorAll('[data-answer]').forEach(x=>x.disabled=true);if(b.dataset.answer===current.name){score++;$('#silFeedback').textContent='Correct! Nice spotting.'}else $('#silFeedback').textContent=`Not quite — it was ${current.name}.`;$('#silNext').hidden=false});$('#silNext').onclick=next}next()}
+function renderSilhouette(){let idx=0,score=0,round=0,current;function next(){if(round>=10){shell(`<h3>Shadow scout complete!</h3><p>You identified <b>${score} / 10</b> Pokémon.</p><button id="silAgain">Play again ↻</button>`);$('#silAgain').onclick=()=>{idx=0;score=0;round=0;next()};return}current=silhouettes[Math.floor(Math.random()*silhouettes.length)];idx++;round++;draw()}function draw(){shell(`<p>Pick the name that matches the shadow. Round ${round} of 10 · Score ${score}</p><img class="silhouette-img" src="poketalk/${current.file}" alt="Black Pokémon silhouette"><div class="answer-options">${[...current.opts].sort(()=>Math.random()-.5).map(x=>`<button data-answer="${x}">${x}</button>`).join('')}</div><p id="silFeedback" class="game-status">Choose carefully!</p><button id="silNext" hidden>Next shadow →</button>`);modalBody.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{modalBody.querySelectorAll('[data-answer]').forEach(x=>x.disabled=true);if(b.dataset.answer===current.name){score++;$('#silFeedback').textContent='Correct! Nice spotting.'}else $('#silFeedback').textContent=`Not quite — it was ${current.name}.`;$('#silNext').hidden=false});$('#silNext').onclick=next}next()}
 
 function renderPuzzle() {
   let size = 3;
   let tiles = [];
   let moves = 0;
   let completed = false;
-  const picture = "assets/pikachu.png";
+  const picture = "poketalk/pikachu.png";
 
   function shuffle() {
     tiles = [...Array(size * size - 1).keys()].map(n => n + 1);
@@ -1263,33 +1263,4 @@ let quizData=[],quizIndex=0,quizScore=0,hintUsed=false;
 async function renderQuiz(){shell('<p>Loading your Pokédex challenge…</p>');try{const response=await fetch('questions.txt');if(!response.ok)throw new Error('Could not load questions.txt');quizData=await response.json();if(!Array.isArray(quizData)||quizData.length<1)throw new Error('Question file is empty');quizData=quizData.map(q=>({...q})).sort(()=>Math.random()-.5);quizIndex=0;quizScore=0;hintUsed=false;drawQuiz()}catch(e){shell(`<p>Could not load <code>questions.txt</code>. Open this site through a static web server (GitHub Pages works), and check that the file contains valid JSON.</p><p>${e.message}</p>`);}}
 function drawQuiz(){if(quizIndex>=quizData.length){shell(`<div style="font-size:40px;color:var(--yellow)">✦</div><h3>Quiz complete!</h3><p>You scored <b>${quizScore} / ${quizData.length}</b>.</p><p>${Math.round(quizScore/quizData.length*100)}% Poké-knowledge unlocked.</p><button id="quizAgain">Try a new run ↻</button>`);$('#quizAgain').onclick=()=>renderQuiz();return}const q=quizData[quizIndex];hintUsed=false;shell(`<div class="quiz-meta">QUESTION ${quizIndex+1} / ${quizData.length} · SCORE ${quizScore}</div><div class="quiz-progress"><span style="width:${quizIndex/quizData.length*100}%"></span></div><p class="quiz-question">${escapeHtml(q.question)}</p><p class="quiz-hint" id="quizHint">Need a clue? Tap hint.</p><div class="quiz-answer"><input id="quizInput" autocomplete="off" placeholder="Type your answer…"><button id="quizSubmit">Submit ↗</button></div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button id="quizHintBtn">Show hint ✦</button><button id="quizSkip">Skip question →</button></div><p class="game-status" id="quizFeedback"></p>`);const submit=()=>{const answer=$('#quizInput').value.trim().toLowerCase().replace(/[^a-z0-9]/g,'');const correct=String(q.answer).toLowerCase().replace(/[^a-z0-9]/g,'');if(!answer){$('#quizFeedback').textContent='Type an answer first.';return}if(answer===correct){quizScore++;$('#quizFeedback').textContent='Correct! Great work.'}else $('#quizFeedback').textContent=`Not quite — answer: ${q.answer}`;$('#quizSubmit').disabled=true;$('#quizInput').disabled=true;$('#quizSkip').textContent='Next question →';$('#quizSkip').onclick=()=>{quizIndex++;drawQuiz()}};$('#quizSubmit').onclick=submit;$('#quizInput').addEventListener('keydown',e=>{if(e.key==='Enter')submit()});$('#quizHintBtn').onclick=()=>{$('#quizHint').textContent='Hint: '+q.hint;hintUsed=true};$('#quizSkip').onclick=()=>{quizIndex++;drawQuiz()};$('#quizInput').focus()}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-
-const feedbackForm = document.getElementById("feedbackForm");
-const formNote = document.getElementById("formNote");
-
-feedbackForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  // Yahan apna email address daalo
-  const recipient = "contact.poketalks@gmail.com";
-
-  const subject = encodeURIComponent(
-    "PokeTalks Website Feedback"
-  );
-
-  const body = encodeURIComponent(
-    `Trainer Name: ${name}\n` +
-    `Visitor Email: ${email || "Not provided"}\n\n` +
-    `Message:\n${message}`
-  );
-
-  window.location.href =
-    `mailto:${recipient}?subject=${subject}&body=${body}`;
-
-  formNote.textContent =
-    "Your email app is opening. Please send the prepared message to deliver your feedback.";
-});
+$('#feedbackForm').addEventListener('submit',e=>{e.preventDefault();const name=$('#name').value.trim(),email=$('#email').value.trim(),message=$('#message').value.trim();const subject=encodeURIComponent('PokeTalks Fan Arcade feedback');const body=encodeURIComponent(`Trainer: ${name}\nEmail: ${email||'Not provided'}\n\n${message}`);$('#formNote').textContent='Opening your email app with the message prefilled…';window.location.href=`mailto:hello@example.com?subject=${subject}&body=${body}`;});
