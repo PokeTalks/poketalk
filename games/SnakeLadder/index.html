@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101329">
+<title>Pokémon Snakes & Ladders | PokeTalks Arcade</title>
+
+<style>
+#pokeSnake {
+  --bg: #101329;
+  --panel: #191e3b;
+  --text: #f4f6ff;
+  --muted: #a6aecb;
+  --cyan: #43e8ff;
+  --green: #39f5a0;
+  --red: #ff526e;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 10% 0%, #33215e 0, transparent 45%),
+    radial-gradient(ellipse at 100% 90%, #103e58 0, transparent 35%),
+    var(--bg);
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#pokeSnake * { box-sizing: border-box; }
+#pokeSnake button { font: inherit; cursor: pointer; }
+#pokeSnake .ps-header { text-align:center; margin-bottom:22px; }
+#pokeSnake .ps-eyebrow {
+  color: var(--cyan); letter-spacing:3px; font-size:11px;
+  font-weight:900; text-transform:uppercase;
+}
+#pokeSnake h1 {
+  margin:8px 0; line-height:1.1;
+  font-size:clamp(25px,5vw,43px);
+  letter-spacing:-1px;
+}
+#pokeSnake .ps-gradient {
+  background:linear-gradient(90deg,#54eaff,#c5a4ff,#ff8dba);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent;
+}
+#pokeSnake .ps-subtitle { color:var(--muted); font-size:13px; }
+#pokeSnake .ps-layout {
+  display:grid; grid-template-columns:minmax(0,1fr) 290px;
+  gap:18px; align-items:start;
+}
+#pokeSnake .ps-panel {
+  background:rgba(22,27,53,.91);
+  border:1px solid #353c62; border-radius:16px;
+  padding:14px; min-width:0;
+  box-shadow:0 10px 35px #0003;
+}
+#pokeSnake .ps-board {
+  display:grid; grid-template-columns:repeat(10,minmax(0,1fr));
+  gap:3px; padding:5px;
+  background:#0a0d1c; border:1px solid #40486c;
+  border-radius:12px; aspect-ratio:1;
+}
+#pokeSnake .ps-tile {
+  position:relative; min-width:0; min-height:0;
+  border-radius:4px; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:1px;
+  background:#242b4b; border:1px solid #363e60;
+}
+#pokeSnake .ps-tile:nth-child(4n+1) { background:#2c3153; }
+#pokeSnake .ps-tile.ps-start { background:#164e48; }
+#pokeSnake .ps-tile.ps-finish { background:#5a3e16; }
+#pokeSnake .ps-num {
+  position:absolute; top:2px; left:3px;
+  font-size:clamp(7px,1.2vw,11px);
+  color:#c6cce3; font-weight:800; line-height:1;
+}
+#pokeSnake .ps-tile.ps-ladder {
+  background:linear-gradient(140deg,#16483c,#203d4a);
+  border-color:#39f5a0; box-shadow:inset 0 0 9px #39f5a025;
+}
+#pokeSnake .ps-tile.ps-snake {
+  background:linear-gradient(140deg,#542039,#34233e);
+  border-color:#ff526e; box-shadow:inset 0 0 9px #ff526e22;
+}
+#pokeSnake .ps-special {
+  font-size:clamp(11px,2.2vw,20px);
+  line-height:1.05; margin-top:5px;
+}
+#pokeSnake .ps-tag {
+  font-size:clamp(5px,.95vw,9px); font-weight:900;
+  line-height:1.1; text-align:center; max-width:100%;
+  overflow-wrap:anywhere; padding:0 1px;
+}
+#pokeSnake .ps-ladder .ps-tag { color:#70ffc0; }
+#pokeSnake .ps-snake .ps-tag { color:#ff9aab; }
+#pokeSnake .ps-token-row {
+  display:flex; flex-wrap:wrap; justify-content:center;
+  align-items:center; gap:1px; margin-top:1px; z-index:1;
+}
+#pokeSnake .ps-token {
+  width:clamp(13px,2.3vw,25px);
+  height:clamp(13px,2.3vw,25px);
+  border-radius:50%; display:grid; place-items:center;
+  border:1.5px solid white; font-size:clamp(8px,1.4vw,14px);
+  box-shadow:0 0 8px currentColor;
+}
+#pokeSnake .ps-pikachu { background:#ffd83d; color:#705100; }
+#pokeSnake .ps-lucario { background:#52bfff; color:#073b83; }
+#pokeSnake .ps-greninja { background:#665bff; color:white; }
+#pokeSnake .ps-charizard { background:#ff7043; color:#fff2c9; }
+#pokeSnake .ps-legend {
+  display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;
+  color:var(--muted); font-size:11px;
+}
+#pokeSnake .ps-legend span { display:flex; align-items:center; gap:5px; }
+#pokeSnake .ps-dot {
+  width:9px; height:9px; border-radius:3px; display:inline-block;
+}
+#pokeSnake .ps-side { display:flex; flex-direction:column; gap:12px; }
+#pokeSnake .ps-section-title {
+  font-size:12px; text-transform:uppercase; letter-spacing:1.4px;
+  color:#c7cce4; font-weight:900; margin:0 0 11px;
+}
+#pokeSnake .ps-player {
+  display:flex; align-items:center; gap:10px; padding:9px;
+  border:1px solid #373e61; border-radius:11px;
+  margin-top:7px; background:#171c35;
+}
+#pokeSnake .ps-player.ps-active {
+  border-color:var(--cyan); background:#153443;
+  box-shadow:0 0 15px #43e8ff18;
+}
+#pokeSnake .ps-avatar {
+  width:37px; height:37px; border-radius:50%;
+  display:grid; place-items:center; font-size:21px;
+  border:2px solid currentColor; flex-shrink:0;
+}
+#pokeSnake .ps-player-info { flex:1; min-width:0; }
+#pokeSnake .ps-player-name { font-size:12px; font-weight:900; }
+#pokeSnake .ps-position { color:var(--muted); font-size:11px; margin-top:3px; }
+#pokeSnake .ps-dice-area { text-align:center; padding:8px 0; }
+#pokeSnake .ps-dice {
+  width:78px; height:78px; border-radius:50%;
+  position:relative; overflow:hidden; margin:0 auto 12px;
+  border:3px solid #fff; padding:0;
+  background:linear-gradient(to bottom,#ff455b 0 47%,#f7f7ff 47% 100%);
+  box-shadow:0 0 0 4px #ff526e22,0 0 25px #ff526e55;
+  transition:filter .2s;
+}
+#pokeSnake .ps-dice:before {
+  content:""; position:absolute; left:0; right:0; top:46%;
+  height:7px; background:#15182d; border:1px solid #fff;
+}
+#pokeSnake .ps-dice:after {
+  content:""; position:absolute; width:23px; height:23px;
+  border-radius:50%; border:5px solid #15182d;
+  background:white; left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 0 2px white;
+}
+#pokeSnake .ps-dice.ps-spinning { animation:ps-throw .65s ease-in-out; }
+@keyframes ps-throw {
+  0% { transform:translateY(0) rotate(0) scale(1); }
+  25% { transform:translateY(-25px) rotate(150deg) scale(1.12); }
+  55% { transform:translateY(5px) rotate(340deg) scale(.92); }
+  80% { transform:translateY(-8px) rotate(520deg) scale(1.04); }
+  100% { transform:translateY(0) rotate(720deg) scale(1); }
+}
+#pokeSnake .ps-roll-number {
+  font-size:34px; font-weight:1000; line-height:1.1;
+  color:white; text-shadow:0 0 16px #43e8ff;
+}
+#pokeSnake .ps-roll-caption { color:var(--muted); font-size:11px; margin-top:4px; }
+#pokeSnake .ps-btn {
+  border:0; border-radius:10px; padding:12px;
+  font-weight:900; width:100%; color:#101329;
+  background:linear-gradient(100deg,#43e8ff,#9a9cff);
+  box-shadow:0 4px 16px #43e8ff20;
+}
+#pokeSnake .ps-btn:disabled { opacity:.45; cursor:not-allowed; }
+#pokeSnake .ps-reset {
+  background:#252b49; color:#f4f6ff;
+  border:1px solid #454c70; margin-top:8px;
+}
+#pokeSnake .ps-status {
+  font-size:12px; color:#dce5ff; text-align:center;
+  line-height:1.5; min-height:38px; margin:9px 0;
+}
+#pokeSnake .ps-log {
+  max-height:190px; overflow:auto; display:flex;
+  flex-direction:column; gap:7px;
+}
+#pokeSnake .ps-log-item {
+  font-size:11px; line-height:1.45; color:#c5cbe1;
+  border-left:2px solid #505b87; padding:5px 8px;
+  background:#11162b; border-radius:0 6px 6px 0;
+}
+#pokeSnake .ps-log-item:first-child { border-color:var(--cyan); }
+#pokeSnake .ps-rules { font-size:11px; color:var(--muted); line-height:1.7; }
+#pokeSnake .ps-rules strong { color:#e6eaff; }
+#pokeSnake .ps-footer {
+  text-align:center; margin-top:18px; font-size:10px;
+  color:#8189ac; letter-spacing:1px;
+}
+@media(max-width:760px) {
+  #pokeSnake { padding:12px; border-radius:12px; }
+  #pokeSnake .ps-layout { grid-template-columns:1fr; }
+  #pokeSnake .ps-side { display:grid; grid-template-columns:1fr; }
+  #pokeSnake .ps-panel { padding:10px; }
+  #pokeSnake .ps-board { gap:2px; padding:3px; }
+  #pokeSnake .ps-num { top:2px; left:2px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #pokeSnake .ps-dice.ps-spinning { animation-duration:.01ms; }
+}
+</style>
+</head>
+
+<body style="margin:0;background:#101329;padding:12px">
+<div id="pokeSnake">
+  <header class="ps-header">
+    <div class="ps-eyebrow">⚡ PokeTalks Arcade ⚡</div>
+    <h1>POKÉMON <span class="ps-gradient">SNAKES & LADDERS</span></h1>
+    <div class="ps-subtitle">Roll the Poké Ball. Climb with friends. Avoid the villains!</div>
+  </header>
+
+  <div class="ps-layout">
+    <section class="ps-panel">
+      <div id="psBoard" class="ps-board" aria-label="Snakes and ladders game board"></div>
+      <div class="ps-legend">
+        <span><i class="ps-dot" style="background:#39f5a0"></i> Companion ladder</span>
+        <span><i class="ps-dot" style="background:#ff526e"></i> Villain trap</span>
+        <span>🏆 Reach tile 100 exactly</span>
+      </div>
+    </section>
+
+    <aside class="ps-side">
+      <section class="ps-panel">
+        <h2 class="ps-section-title">⚡ Trainers</h2>
+        <div id="psPlayers"></div>
+      </section>
+
+      <section class="ps-panel">
+        <h2 class="ps-section-title">🎲 Poké Ball Dice</h2>
+        <div class="ps-dice-area">
+          <button id="psDice" class="ps-dice" aria-label="Roll Poké Ball dice"></button>
+          <div id="psRollNumber" class="ps-roll-number">?</div>
+          <div class="ps-roll-caption">ROLL A NUMBER FROM 1 TO 6</div>
+        </div>
+        <div id="psStatus" class="ps-status" aria-live="polite">
+          Pikachu's turn! Roll the Poké Ball to begin.
+        </div>
+        <button id="psRoll" class="ps-btn">⚡ ROLL POKÉ BALL</button>
+        <button id="psReset" class="ps-btn ps-reset">↻ NEW GAME / RESET</button>
+      </section>
+
+      <section class="ps-panel">
+        <h2 class="ps-section-title">📜 Adventure Log</h2>
+        <div id="psLog" class="ps-log" aria-live="polite">
+          <div class="ps-log-item">Welcome, trainers! Your adventure begins.</div>
+        </div>
+      </section>
+
+      <section class="ps-panel">
+        <h2 class="ps-section-title">🗺️ How to Play</h2>
+        <div class="ps-rules">
+          <strong>1.</strong> Roll the Poké Ball to move.<br>
+          <strong>2.</strong> Land on a green tile to climb a ladder.<br>
+          <strong>3.</strong> Red tiles send you down a villain's trap.<br>
+          <strong>4.</strong> You must reach tile 100 exactly to win.<br>
+          <strong>5.</strong> If your roll goes past 100, you stay put.<br>
+          <strong>6.</strong> Trainers take turns automatically.
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <div class="ps-footer">POKETALKS ARCADE · FAN-MADE MINI GAME</div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  const root = document.getElementById("pokeSnake");
+  if (!root || root.dataset.initialized) return;
+  root.dataset.initialized = "true";
+
+  const $ = id => root.querySelector("#" + id);
+
+  const players = [
+    { name:"Pikachu", emoji:"⚡", css:"ps-pikachu", pos:0 },
+    { name:"Lucario", emoji:"🔵", css:"ps-lucario", pos:0 },
+    { name:"Greninja", emoji:"💧", css:"ps-greninja", pos:0 },
+    { name:"Charizard", emoji:"🔥", css:"ps-charizard", pos:0 }
+  ];
+
+  // Start tile -> destination tile.
+  const ladders = {
+    3:  { to:22, name:"Misty", emoji:"💧" },
+    8:  { to:30, name:"Brock", emoji:"🪨" },
+    20: { to:41, name:"Serena", emoji:"✨" },
+    28: { to:55, name:"Dawn", emoji:"🌟" },
+    36: { to:57, name:"Clemont", emoji:"⚡" },
+    51: { to:72, name:"Goh", emoji:"🔴" }
+  };
+
+  const snakes = {
+    99: { to:78, name:"Team Rocket", emoji:"🚀" },
+    95: { to:75, name:"Giovanni", emoji:"😈" },
+    87: { to:24, name:"Cyrus", emoji:"🌌" },
+    64: { to:42, name:"Lysandre", emoji:"🔥" },
+    62: { to:19, name:"Ghetsis", emoji:"👁️" },
+    49: { to:11, name:"Guzma", emoji:"💀" }
+  };
+
+  const board = $("psBoard");
+  const tileMap = {};
+  let current = 0;
+  let busy = false;
+  let gameOver = false;
+  let logs = [];
+
+  // Standard serpentine board: tile 1 is at bottom-left.
+  for (let row = 9; row >= 0; row--) {
+    for (let col = 0; col < 10; col++) {
+      const number = row % 2 === 0
+        ? row * 10 + col + 1
+        : row * 10 + (10 - col);
+
+      const tile = document.createElement("div");
+      tile.className = "ps-tile";
+      tile.dataset.tile = number;
+
+      const num = document.createElement("span");
+      num.className = "ps-num";
+      num.textContent = number;
+      tile.appendChild(num);
+
+      if (ladders[number]) {
+        tile.classList.add("ps-ladder");
+        const badge = document.createElement("span");
+        badge.className = "ps-special";
+        badge.textContent = ladders[number].emoji;
+        const tag = document.createElement("span");
+        tag.className = "ps-tag";
+        tag.textContent = ladders[number].name;
+        tile.append(badge, tag);
+        tile.title = ladders[number].name + ": climb to " + ladders[number].to;
+      } else if (snakes[number]) {
+        tile.classList.add("ps-snake");
+        const badge = document.createElement("span");
+        badge.className = "ps-special";
+        badge.textContent = snakes[number].emoji;
+        const tag = document.createElement("span");
+        tag.className = "ps-tag";
+        tag.textContent = snakes[number].name;
+        tile.append(badge, tag);
+        tile.title = snakes[number].name + ": slide to " + snakes[number].to;
+      } else if (number === 1) {
+        tile.classList.add("ps-start");
+        tile.title = "Starting tile";
+      } else if (number === 100) {
+        tile.classList.add("ps-finish");
+        const badge = document.createElement("span");
+        badge.className = "ps-special";
+        badge.textContent = "🏆";
+        tile.appendChild(badge);
+        tile.title = "Finish tile";
+      }
+
+      const tokenRow = document.createElement("div");
+      tokenRow.className = "ps-token-row";
+      tile.appendChild(tokenRow);
+      tileMap[number] = tile;
+      board.appendChild(tile);
+    }
+  }
+
+  function addLog(message) {
+    logs.unshift(message);
+    logs = logs.slice(0, 25);
+    const log = $("psLog");
+    log.replaceChildren();
+
+    logs.forEach(message => {
+      const item = document.createElement("div");
+      item.className = "ps-log-item";
+      item.textContent = message;
+      log.appendChild(item);
+    });
+  }
+
+  function render() {
+    // Render character tokens on the correct board tiles.
+    Object.values(tileMap).forEach(tile => {
+      tile.querySelector(".ps-token-row").replaceChildren();
+    });
+
+    players.forEach(player => {
+      if (player.pos < 1) return;
+
+      const token = document.createElement("span");
+      token.className = "ps-token " + player.css;
+      token.textContent = player.emoji;
+      token.title = player.name;
+      token.setAttribute("aria-label", player.name);
+
+      tileMap[player.pos].querySelector(".ps-token-row").appendChild(token);
+    });
+
+    const panel = $("psPlayers");
+    panel.replaceChildren();
+
+    players.forEach((player, index) => {
+      const card = document.createElement("div");
+      card.className = "ps-player" + (index === current && !gameOver
+        ? " ps-active" : "");
+
+      const avatar = document.createElement("div");
+      avatar.className = "ps-avatar " + player.css;
+      avatar.textContent = player.emoji;
+
+      const info = document.createElement("div");
+      info.className = "ps-player-info";
+
+      const name = document.createElement("div");
+      name.className = "ps-player-name";
+      name.textContent = player.name;
+
+      const position = document.createElement("div");
+      position.className = "ps-position";
+      position.textContent = "Tile " + player.pos + " / 100";
+
+      info.append(name, position);
+      card.append(avatar, info);
+
+      if (gameOver && index === current) {
+        const trophy = document.createElement("span");
+        trophy.textContent = "🏆";
+        card.appendChild(trophy);
+      }
+
+      panel.appendChild(card);
+    });
+
+    $("psRoll").disabled = busy || gameOver;
+    $("psDice").disabled = busy || gameOver;
+  }
+
+  function setStatus(message) {
+    $("psStatus").textContent = message;
+  }
+
+  function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function rollDice() {
+    if (busy || gameOver) return;
+
+    busy = true;
+    render();
+
+    const dice = $("psDice");
+    dice.classList.remove("ps-spinning");
+    // Restart CSS animation.
+    void dice.offsetWidth;
+    dice.classList.add("ps-spinning");
+
+    setStatus(players[current].name + " is rolling...");
+    await wait(650);
+    dice.classList.remove("ps-spinning");
+
+    if (gameOver) return;
+
+    const roll = Math.floor(Math.random() * 6) + 1;
+    $("psRollNumber").textContent = roll;
+
+    const player = players[current];
+    const oldPosition = player.pos;
+    const target = oldPosition + roll;
+
+    addLog(player.name + " rolled " + roll + ".");
+
+    if (target > 100) {
+      setStatus(player.name + " needs an exact roll to reach 100!");
+      addLog(player.name + " stays on tile " + oldPosition + ".");
+    } else {
+      player.pos = target;
+      addLog(player.name + " moved to tile " + target + ".");
+      render();
+
+      await wait(350);
+
+      if (ladders[player.pos]) {
+        const ladder = ladders[player.pos];
+        setStatus("🟢 " + ladder.name + " helps " + player.name + " climb!");
+        addLog("🪜 " + ladder.name + " climbed " +
+          player.pos + " → " + ladder.to + "!");
+        player.pos = ladder.to;
+      } else if (snakes[player.pos]) {
+        const snake = snakes[player.pos];
+        setStatus("🔴 " + snake.name + " caught " + player.name + "!");
+        addLog("🐍 " + snake.name + " sent " +
+          player.name + " down " + player.pos + " → " + snake.to + ".");
+        player.pos = snake.to;
+      }
+
+      render();
+      await wait(350);
+
+      if (player.pos === 100) {
+        gameOver = true;
+        setStatus("🏆 " + player.name + " wins the adventure!");
+        addLog("🏆 " + player.name + " is the champion!");
+        render();
+        busy = false;
+        return;
+      }
+    }
+
+    current = (current + 1) % players.length;
+    setStatus("Next turn: " + players[current].name + "!");
+    render();
+    busy = false;
+  }
+
+  function resetGame() {
+    if (busy) return;
+
+    players.forEach(player => player.pos = 0);
+    current = 0;
+    gameOver = false;
+    $("psRollNumber").textContent = "?";
+    logs = [];
+    addLog("New adventure started! Pikachu goes first.");
+    setStatus("Pikachu's turn! Roll the Poké Ball to begin.");
+    render();
+  }
+
+  $("psRoll").addEventListener("click", rollDice);
+  $("psDice").addEventListener("click", rollDice);
+  $("psReset").addEventListener("click", resetGame);
+
+  addLog("Welcome, trainers! Pikachu goes first.");
+  render();
+})();
+</script>
+</body>
+</html>
+z
